@@ -157,6 +157,8 @@
 
         private void SendError(TftpError errorCode, String errorMessage, IPEndPoint remoteEndPoint)
         {
+            Console.WriteLine("Sending error {0} '{1}'", errorCode, errorMessage);
+
             using (var writer = new TftpPacketWriter(errorMessage.Length + 5))
             {
                 writer.WriteUInt16((UInt16)TftpPacketType.Error);
