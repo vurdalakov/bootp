@@ -87,7 +87,7 @@
             {
                 case DhcpClientSystemArchitecture.ia86Pc:       // legacy BIOS
                     Console.WriteLine("Unsupported client system architecture: {0}", requestPacket.ClientSystemArchitecture);
-                    break;
+                    return;
                 case DhcpClientSystemArchitecture.EfiIa32:      // EFI x86
                     responsePacket.file = Uefi32FileName;
                     break;
@@ -97,7 +97,7 @@
                     break;
                 default:
                     Console.WriteLine("Unsupported client system architecture: {0}", requestPacket.ClientSystemArchitecture);
-                    break;
+                    return;
             }
 
             SendPacket(DhcpMessageType.DhcpAcknowledge, responsePacket, requestPacket.ciaddr, 4011);
