@@ -2,7 +2,7 @@
 
 A simple BOOTP server to support and simplify UEFI application development. It includes proxy DHCP and TFTP servers written in C#.
 
-Allows to run UEFI apps on remote PC over network directly from Visual Studio.
+Allows to run UEFI apps on remote PC over network (PXE) directly from Visual Studio.
 
 ### Usage
 
