@@ -1,8 +1,12 @@
 # BOOTP Server
 
-A simple BOOTP server to support and simplify UEFI application development. It includes proxy DHCP and TFTP servers written in C#.
+A simple BOOTP (PXE) server to support and simplify UEFI application development. It includes proxy DHCP and TFTP servers written in C#.
 
 Allows to run UEFI apps on remote PC over network (PXE) directly from Visual Studio.
+
+### Download
+
+[Version 1.00 (13 KB, requires .NET Framework 4 or higher)](http://cdn.vurdalakov.net/files/bootp/bootp_1_00.zip)
 
 ### Usage
 
